@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta charset="utf8" />
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <script src="https://rawgit.com/protyze/aframe-asset-on-demand-component/master/dist/aframe-asset-on-demand-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="reps-logo" crossorigin="anonymous"
+          src="https://reps.mozilla.org/static/base/img/remo/remo_logo_medium.47fcd5d1baf0.png">
+      </a-assets>
+
+      <a-box
+        id="reps-box"
+        position="0 1 -4"
+        rotation="0 45 0"
+        depth="2"
+        width="2"
+        height="2"
+        src="#reps-logo"></a-box>
+
+      <a-text
+        position="0 2.5 -2"
+        rotation="0 0 0"
+        align="center"
+        color="black"
+        width="5"
+        side="double"
+        value="Mozilla Reps Anniversaries"></a-text>
+
+      <a-sky color="#f6f6f6"></a-sky>
+    </a-scene>
+
+    <script src="app.js"></script>
+  </body>
+</html>
